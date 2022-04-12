@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  <section class="game">
+    <!-- Title -->
+    <div class="title text-center">
+      <b>Rock Paper Scissors</b>
+    </div>
+    <!-- Scoreboard Display for User and AI -->
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="playerScore col-sm-4">
+        <h2 class="text-center">Player</h2>
+        <p class="text-center" id="p-count"> 0 </p>
+      </div>
+      <div class="col-sm-2">
+        <br>
+        <!-- Player selection buttons -->
+        <div class="options text-center">
+          <button class="rock" onClick="chooseRock()">Rock</button>
+          <button class="scissors" onClick="chooseScissors()">Scissors</button>
+          <button class="paper" onClick="choosePaper()">Paper</button>
+        </div>
+      </div>
+      <div class="computerScore col-sm-4">
+        <h2 class="text-center">Computer</h2>
+        <p class="text-center" id="c-count">
+          0
+        </p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <!-- Show result of round -->
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4 text-center images"><img id="leftimg" src="" alt=""></div>
+      <div class="col-sm-2 text-center">
+        <br>
+        <br>
+        <br>
+        <b><p id="result">Choose your move</p></b>
+      </div>
+      <div class="col-sm-4 text-center images"><img id="rightimg" src="" alt=""></div>
+      <div class="col-sm-1"></div>
+    </div>
+    <!-- Button to reset game -->
+    <div class="text-center">
+      <button class="reset" onClick="reset()">Reset</button>
+    </div>
+    <div class="text-center">
+    </div>
+  </section>
+
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>
